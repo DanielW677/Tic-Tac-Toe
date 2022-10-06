@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gridItem{
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    place-items: center;
+    background-color: hotpink;
+}
+.hidden{
+    display: none;
+}
