@@ -17,6 +17,7 @@ const nameInput2 = document.getElementById('name2')
 const submitButton2 = document.getElementById('submit2')
 const winningText = document.getElementById('winningMessage')
 const resetGamebttn = document.getElementById('resetbttn')
+const botButton = document.getElementById('cpu')
 
 function ticTacToe() {
     for (let numOfRowsMade = 0; numOfRowsMade < gameState.gameBoard.length; numOfRowsMade++) {
@@ -75,6 +76,7 @@ function playersTurn(evt){
 
     if(win != null){
         winningText.textContent = 'Win'
+        window.location.reload()
     }
 
 }
@@ -99,4 +101,5 @@ submitButton.addEventListener('click', nameYourself);
 submitButton2.addEventListener('click', nameYourself2);
 gridDiv.addEventListener('click', playersTurn)
 resetGamebttn.addEventListener('click', resetGame)
+
 
